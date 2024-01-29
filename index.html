@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mage Maze</title>
+    <!-- These scripts define constants used throughout the program. -->
+    <script type="text/javascript" src="./js/scripts/util.js"></script>
+    <script type="text/javascript" src="./js/scripts/levels.js"></script>
+    <!-- Load all classes in the head. -->
+    <script type="text/javascript" src="./js/classes/animator.js"></script>
+    <script type="text/javascript" src="./js/classes/asset_manager.js"></script>
+    <script type="text/javascript" src="./js/classes/bounding_box.js"></script>
+    <script type="text/javascript" src="./js/classes/camera.js"></script>
+    <script type="text/javascript" src="./js/classes/game_engine.js"></script>
+    <script type="text/javascript" src="./js/classes/timer.js"></script>
+    <!-- Load all entities. -->
+    <script type="text/javascript" src="./js/classes/entities/green_wizard.js"></script>
+    <script type="text/javascript" src="./js/classes/entities/goblin.js"></script>
+    <script type="text/javascript" src="./js/classes/entities/maze.js"></script>
+    <script type="text/javascript" src="./js/classes/entities/wall.js"></script>
+    <!-- CSS for the webpage and canvas display. -->
+    <link rel="stylesheet" src="./css/general.css" />
+</head>
+<body>
+    <!-- The width and height here are very important! This is the width and height of the amount of pixels on the canvas (as we're drawing) that I can SEE - although there is likely stuff painte outside the visible screen. -->
+    <!-- This is not necessarily the actual pixel width - that is going to be a percent of the width/height of the screen, handled in css. -->
+    <canvas id="game-world" width="1024" height="1024" tabindex="0" autofocus></canvas>
+    <!-- This is the main script to run the game. -->
+    <script type="text/javascript" src="./js/scripts/main.js"></script>
+</body>
+</html>
